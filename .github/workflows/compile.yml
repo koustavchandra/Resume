@@ -7,8 +7,9 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: example-class-relations--svg
-        uses: dante-ev/latex-action@latest
+        uses: xu-cheng/latex-action@v2
         with:
           root_file: example.tex
-          compiler: lualatex
-          args: -interaction=nonstopmode -shell-escape
+          latexmk_use_lualatex: true
+          latexmk_shell_escape: true
+
