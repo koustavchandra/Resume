@@ -1,8 +1,2 @@
-publish:
-  image: igwn/publisher:latest
-  script:
-    - make all
-  artifacts:
-    expire_in: 4w
-    paths:
-      - paper/main.pdf
+- name: LaTeX compilation
+  uses: dante-ev/latex-action@2021-A
