@@ -1,0 +1,8 @@
+publish:
+  image: igwn/publisher:latest
+  script:
+    - make all
+  artifacts:
+    expire_in: 4w
+    paths:
+      - paper/main.pdf
