@@ -244,3 +244,12 @@
     \end{itemize}
 }
 
+\newenvironment{numberlist}{
+    \vspace{-6mm}
+    \begin{enumerate}
+        \itemsep1pt
+        \parskip0pt
+        \parsep0pt
+}{
+    \end{enumerate}
+}
